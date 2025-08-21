@@ -2,6 +2,7 @@
 "use client";
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Star, LucideIcon } from 'lucide-react';
 
 // Star Rating Component
