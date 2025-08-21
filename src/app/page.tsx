@@ -2,6 +2,9 @@
 
 import HeroSection from "@/components/sections/HeroSection"
 import ServicesSection from "@/components/sections/ServicesSection"
+import FeaturedJobsSection from "@/components/sections/FeaturedJobsSection"
+import SocialProofSection from "@/components/sections/SocialProofSection"
+import AvailabilityProcess from "@/components/sections/AvailabilityProcess"
 import ContactForm from "@/components/sections/ContactForm"
 
 export default function Home() {
@@ -9,6 +12,9 @@ export default function Home() {
     <main className="min-h-screen bg-black">
       <HeroSection />
       <ServicesSection />
+      <FeaturedJobsSection />
+      <SocialProofSection />
+      <AvailabilityProcess />
       <ContactForm />
     </main>
   )
