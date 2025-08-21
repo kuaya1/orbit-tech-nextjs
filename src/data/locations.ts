@@ -27,8 +27,8 @@ export const sampleLocations: Location[] = [
     name: 'Loudoun County',
     county: 'Loudoun County',
     state: 'VA',
-    introCopy: 'Expert Starlink satellite internet installation and optimization services in Loudoun County, Virginia. Licensed technicians, same-day service, competitive pricing for Reston, Herndon, Ashburn and surrounding communities.',
-    localChallenges: 'Loudoun County\'s diverse geography, from dense suburban developments to rural estates, requires specialized installation expertise. Our local technicians understand the unique challenges of Northern Virginia\'s terrain, HOA requirements, and seasonal weather patterns that can affect satellite positioning and performance.',
+    introCopy: 'Frustrated with Comcast\'s spotty coverage west of Route 15? Tired of buffering during video calls in Purcellville? Verizon Fios still hasn\'t reached Waterford or Hamilton, leaving residents with expensive, unreliable internet options. Our expert Starlink installation team, based in nearby Reston, provides same-day professional installation throughout Loudoun County. Licensed technicians, competitive $499 installation pricing, and 90-day warranty. Transform your rural or suburban Loudoun County property with blazing-fast satellite internet that actually works where traditional providers fail.',
+    localChallenges: 'Loudoun County\'s western regions face unique challenges with rolling hills blocking traditional ISP infrastructure and mature tree canopy requiring strategic satellite positioning. Our local team navigates HOA requirements in developments like Brambleton and One Loudoun while ensuring optimal performance in rural estates near Bluemont and Round Hill.',
     geoCoordinates: {
       lat: 39.0839,
       lon: -77.6413
@@ -39,20 +39,24 @@ export const sampleLocations: Location[] = [
       'Ashburn',
       'Leesburg',
       'Sterling',
-      'Purcellville'
+      'Purcellville',
+      'Hamilton',
+      'Waterford',
+      'Round Hill',
+      'Lovettsville'
     ],
     faqs: [
       {
-        question: 'How long does Starlink installation take in Loudoun County?',
-        answer: 'Most residential installations in Loudoun County take 2-4 hours, depending on the complexity of your setup and roof accessibility. We offer same-day installation for most locations when scheduled in advance.'
+        question: 'How much does Starlink installation cost in Loudoun County?',
+        answer: 'Professional Starlink installation in Loudoun County costs $499, which includes site survey, professional mounting, cable routing, and system optimization. The Starlink service itself is $120/month. We offer same-day installation and provide a 90-day warranty on all work performed.'
       },
       {
-        question: 'Do I need HOA approval for Starlink installation in Loudoun County?',
-        answer: 'Many Loudoun County communities have HOA guidelines for satellite installations. We can help navigate HOA requirements and provide documentation needed for approval. Our low-profile mounting options often meet community standards.'
+        question: 'Comcast vs Starlink - which is better for Loudoun County residents?',
+        answer: 'Starlink excels in western Loudoun County where Comcast coverage is poor or unavailable. Areas like Purcellville, Hamilton, and Waterford often experience slower Comcast speeds (25-50 Mbps) while Starlink consistently delivers 100-200+ Mbps. For rural properties beyond traditional cable reach, Starlink is often the only high-speed option available.'
       },
       {
-        question: 'What internet speeds can I expect with Starlink in Loudoun County?',
-        answer: 'Starlink typically delivers 100-200+ Mbps download speeds in Loudoun County, with some locations achieving higher speeds. Performance can vary based on network congestion and weather conditions.'
+        question: 'How quickly can you install Starlink in western Loudoun County?',
+        answer: 'We typically complete Loudoun County installations within 2-4 hours and offer same-day service when scheduled in advance. Our Reston-based team can reach Purcellville, Leesburg, or Hamilton within 30 minutes. We maintain local inventory and understand the specific challenges of Loudoun County\'s terrain and HOA requirements.'
       }
     ]
   },
@@ -62,8 +66,8 @@ export const sampleLocations: Location[] = [
     name: 'Fairfax County',
     county: 'Fairfax County',
     state: 'VA',
-    introCopy: 'Professional Starlink satellite internet installation services throughout Fairfax County, Virginia. Our certified technicians provide expert installation, whole-home Wi-Fi optimization, and ongoing support for McLean, Vienna, Falls Church, and surrounding communities. Licensed, insured, and committed to delivering blazing-fast internet connectivity with same-day installation available. Transform your home or business internet experience with Northern Virginia\'s most trusted Starlink installation specialists.',
-    localChallenges: 'Fairfax County\'s mature tree canopy and varied elevation present unique satellite positioning challenges. Our experienced team navigates complex HOA regulations, handles intricate roof configurations, and ensures optimal signal reception despite the area\'s dense foliage and urban interference patterns.',
+    introCopy: 'McLean residents: Tired of paying $200+ for unreliable Verizon Fios? Great Falls homes beyond cable coverage struggling with slow DSL? Vienna neighborhoods experiencing constant internet outages during peak hours? Our professional Starlink installation team provides same-day service throughout Fairfax County at competitive $499 pricing. Based locally in Reston, we understand Fairfax County\'s unique challenges from dense tree coverage in Great Falls to high-rise condo installations in Tysons. Licensed, insured, and trusted by hundreds of Northern Virginia families for dependable satellite internet.',
+    localChallenges: 'Fairfax County\'s mature tree canopy in areas like Great Falls and McLean requires expert satellite positioning, while urban density in Tysons and Falls Church presents mounting challenges. Our experienced team navigates strict HOA regulations in communities like Reston Association and handles complex roof configurations in Vienna\'s diverse housing stock.',
     geoCoordinates: {
       lat: 38.8462,
       lon: -77.3064
@@ -82,16 +86,16 @@ export const sampleLocations: Location[] = [
     ],
     faqs: [
       {
+        question: 'How much does Starlink installation cost in Fairfax County?',
+        answer: 'Professional Starlink installation in Fairfax County costs $499 for complete setup including site survey, professional mounting, and system optimization. Monthly Starlink service is $120. We often save customers $50-100+ monthly compared to premium Verizon Fios or Comcast packages while providing better rural coverage.'
+      },
+      {
         question: 'Can Starlink work effectively with Fairfax County\'s heavy tree coverage?',
-        answer: 'Yes, our expert technicians conduct thorough site surveys to identify optimal mounting positions that provide clear sky visibility. We often recommend strategic tree trimming or alternative mounting locations to ensure consistent signal reception throughout the year.'
+        answer: 'Yes, our expert technicians conduct thorough site surveys in areas like Great Falls and McLean to identify optimal mounting positions with clear sky visibility. We often recommend strategic tree trimming or alternative mounting locations on properties with dense canopy to ensure year-round connectivity.'
       },
       {
-        question: 'How do you handle HOA requirements in Fairfax County communities?',
-        answer: 'We\'re experienced with Fairfax County HOA guidelines and provide all necessary documentation for approval. Our low-profile dishes and professional installation methods typically meet even the strictest community standards while maintaining optimal performance.'
-      },
-      {
-        question: 'What makes Orbit Tech different from other Starlink installers in Fairfax County?',
-        answer: 'We\'re locally based in the DMV area, understand Fairfax County\'s unique challenges, and provide comprehensive service including site assessment, professional installation, Wi-Fi optimization, and ongoing local support. Our 90-day warranty and same-day service set us apart.'
+        question: 'Verizon Fios vs Starlink - which is better for Fairfax County?',
+        answer: 'For most of Fairfax County with Fios access, both provide excellent speeds. However, Starlink excels in Great Falls estates, rural Vienna areas, and locations where Fios is unavailable or unreliable. Starlink also offers better value at $120/month versus Fios gigabit plans often costing $80-120+ with equipment fees and contracts.'
       }
     ]
   },
