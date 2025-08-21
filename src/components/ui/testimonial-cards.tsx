@@ -46,7 +46,7 @@ export const SecondaryTestimonialCard: React.FC<TestimonialCardProps> = ({ testi
   <div className="group bg-black/50 border border-neutral-800 rounded-2xl p-8 h-full flex flex-col transition-all duration-300 hover:bg-neutral-900/50 hover:border-neutral-700">
     <div className="flex-grow">
       <div className="flex items-center gap-1 mb-4">{[...Array(5)].map((_, i) => <StarIcon key={i} />)}</div>
-      <blockquote className="mb-6"><p className="text-neutral-300 leading-relaxed">"{testimonial.quote}"</p></blockquote>
+      <blockquote className="mb-6"><p className="text-neutral-300 leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p></blockquote>
     </div>
     <div className="mt-auto pt-6 border-t border-neutral-800">
       <div className="flex items-center gap-3">

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { MapPin, Zap, CheckCircle, ArrowRight } from 'lucide-react';
+import { Zap, CheckCircle } from 'lucide-react';
 import { InstallationJob } from '@/types/jobs';
 
 interface JobCardProps {
