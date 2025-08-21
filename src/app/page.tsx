@@ -6,6 +6,7 @@ import FeaturedJobsSection from "@/components/sections/FeaturedJobsSection"
 import SocialProofSection from "@/components/sections/SocialProofSection"
 import AvailabilityProcess from "@/components/sections/AvailabilityProcess"
 import ContactForm from "@/components/sections/ContactForm"
+import FinalCTASection from "@/components/sections/FinalCTASection"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SocialProofSection />
       <ContactForm />
       <FeaturedJobsSection />
+      <FinalCTASection />
     </main>
   )
 }
