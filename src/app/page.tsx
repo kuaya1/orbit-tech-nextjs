@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black">
       <HeroSection />
-      <ServicesSection />
-      <FeaturedJobsSection />
-      <SocialProofSection />
       <AvailabilityProcess />
+      <ServicesSection />
+      <SocialProofSection />
       <ContactForm />
+      <FeaturedJobsSection />
     </main>
   )
 }
