@@ -21,8 +21,8 @@ interface TrustIndicatorProps {
 }
 
 export const TrustIndicator: React.FC<TrustIndicatorProps> = ({ icon: Icon, text }) => (
-  <div className="flex items-center gap-2 text-neutral-400">
-    <Icon className="w-4 h-4 text-green-500" />
-    <span className="text-sm font-medium">{text}</span>
+  <div className="flex items-center gap-2 text-neutral-400 justify-center sm:justify-start">
+    <Icon className="w-4 h-4 text-green-500 flex-shrink-0" />
+    <span className="text-sm font-medium whitespace-nowrap">{text}</span>
   </div>
 );
