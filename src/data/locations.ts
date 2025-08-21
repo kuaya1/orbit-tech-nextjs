@@ -215,5 +215,83 @@ export const sampleLocations: Location[] = [
         answer: 'Most installations in Prince George\'s County are completed within 2-4 hours, with same-day service available when scheduled in advance. We maintain local inventory and our Maryland-based technicians ensure prompt, professional service throughout the county.'
       }
     ]
+  },
+  {
+    id: '6',
+    slug: 'fauquier-county-va',
+    name: 'Fauquier County',
+    county: 'Fauquier County',
+    state: 'VA',
+    introCopy: 'Frustrated with HughesNet\'s data caps and slow speeds in Marshall? Tired of Verizon DSL crawling at 10 Mbps in The Plains? Rural Fauquier County properties near Sky Meadows still waiting for reliable broadband? Our expert Starlink installation team provides same-day professional installation throughout Fauquier County at competitive $499 pricing. Based in nearby Northern Virginia, we understand the unique challenges of horse country properties, sprawling estates, and rural businesses. Licensed technicians, 90-day warranty, and proven experience with Fauquier\'s rolling terrain and agricultural properties.',
+    localChallenges: 'Fauquier County\'s rural landscape presents unique challenges with horse farms requiring livestock-safe installations, historic properties in The Plains with preservation considerations, and steep terrain near the Blue Ridge foothills. Our team specializes in agricultural property installations, navigating conservation easements, and ensuring clear sight lines over Fauquier\'s signature rolling hills and mature oak trees.',
+    geoCoordinates: {
+      lat: 38.7126,
+      lon: -77.8311
+    },
+    cities: [
+      'Warrenton',
+      'The Plains',
+      'Marshall',
+      'Catlett',
+      'Bealeton',
+      'Remington',
+      'Casanova',
+      'Delaplane',
+      'Upperville',
+      'Midland'
+    ],
+    faqs: [
+      {
+        question: 'How much does Starlink installation cost in Fauquier County?',
+        answer: 'Professional Starlink installation in Fauquier County costs $499, including site survey, professional mounting on barns or homes, cable routing, and system optimization. Monthly Starlink service is $120. This typically saves $50-80 monthly compared to business-class satellite internet while providing 10x faster speeds than rural DSL options.'
+      },
+      {
+        question: 'Can Starlink be installed on horse farms and agricultural properties in Fauquier County?',
+        answer: 'Absolutely! We specialize in Fauquier County agricultural installations. Our team ensures livestock-safe mounting on barns, houses, or dedicated poles. We understand working around horses, farm equipment, and seasonal operations while providing the reliable internet essential for modern farm management and rural business operations.'
+      },
+      {
+        question: 'How does Starlink perform in rural Fauquier County compared to HughesNet or Viasat?',
+        answer: 'Starlink dramatically outperforms traditional satellite internet in Fauquier County. While HughesNet typically provides 25 Mbps with data caps, Starlink delivers 100-200+ Mbps with unlimited data. No more buffering during video calls from The Plains or slow uploads from Marshall. Perfect for rural businesses, remote work, and streaming.'
+      }
+    ]
+  },
+  {
+    id: '7',
+    slug: 'prince-william-county-va',
+    name: 'Prince William County',
+    county: 'Prince William County',
+    state: 'VA',
+    introCopy: 'Tired of Comcast outages during storms in Manassas? Frustrated with Verizon Fios unavailability in rural Nokesville? Prince William County\'s western areas near Bull Run still struggling with slow DSL speeds? Our professional Starlink installation team provides same-day service throughout Prince William County at $499 installation pricing. Based in nearby Northern Virginia, we serve from Woodbridge townhomes to Haymarket estates with expert satellite positioning. Licensed, insured, and experienced with PWC\'s diverse housing from dense subdivisions to rural properties near the battlefield parks.',
+    localChallenges: 'Prince William County\'s mix of dense suburban developments and rural western areas creates diverse installation challenges. Our team navigates strict HOA requirements in communities like Lake Ridge and Potomac Shores, while handling rural installations near Bull Run Battlefield and Prince William Forest Park where terrain and tree coverage require expert satellite positioning.',
+    geoCoordinates: {
+      lat: 38.7135,
+      lon: -77.4605
+    },
+    cities: [
+      'Woodbridge',
+      'Manassas',
+      'Dale City',
+      'Lake Ridge',
+      'Dumfries',
+      'Occoquan',
+      'Haymarket',
+      'Nokesville',
+      'Gainesville',
+      'Bristow'
+    ],
+    faqs: [
+      {
+        question: 'How much does Starlink installation cost in Prince William County?',
+        answer: 'Professional Starlink installation in Prince William County costs $499 for complete setup including site survey, professional mounting, cable routing, and optimization. Monthly Starlink service is $120. We often save customers money compared to premium Comcast packages while providing better reliability in areas prone to outages.'
+      },
+      {
+        question: 'Can you install Starlink in Prince William County townhomes and condos?',
+        answer: 'Yes! We have extensive experience with PWC townhome and condo installations, including communities like Lake Ridge, Potomac Shores, and Dale City. We work with HOAs to ensure compliant installation while achieving optimal satellite positioning for reliable connectivity in various architectural configurations.'
+      },
+      {
+        question: 'How does Starlink perform in western Prince William County\'s rural areas?',
+        answer: 'Starlink excels in rural western PWC areas like Nokesville, Haymarket, and near Bull Run where traditional cable is unavailable or unreliable. Our installations consistently deliver 100-200+ Mbps speeds compared to slow DSL options, making it perfect for remote work, streaming, and modern connectivity needs in rural settings.'
+      }
+    ]
   }
 ];
