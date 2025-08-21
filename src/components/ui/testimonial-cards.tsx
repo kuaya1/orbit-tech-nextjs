@@ -1,124 +1,63 @@
+// app/components/ui/testimonial-cards.tsx
+
 import React from 'react';
-import { Star } from 'lucide-react';
 import { Testimonial } from '@/types/testimonials';
 
-// Star Rating Component
-const StarIcon: React.FC<{ className?: string }> = ({ className = "w-5 h-5" }) => (
-  <Star className={`${className} fill-yellow-400 text-yellow-400`} />
+const StarIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 text-yellow-400">
+    <path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+  </svg>
 );
 
-// Primary Testimonial Card (larger, featured)
-interface PrimaryTestimonialCardProps {
+interface TestimonialCardProps {
   testimonial: Testimonial;
-  isVisible: boolean;
 }
 
-export const PrimaryTestimonialCard: React.FC<PrimaryTestimonialCardProps> = ({
-  testimonial,
-  isVisible
-}) => {
-  return (
-    <div className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 p-8 md:p-12 transition-all duration-1000 ${
-      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-    }`}>
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl group-hover:bg-blue-500/10 transition-colors duration-700" />
-      
-      <div className="relative z-10">
-        {/* Google Badge */}
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-1">
-              {[...Array(5)].map((_, i) => (
-                <StarIcon key={i} className="w-6 h-6" />
-              ))}
-            </div>
-            <span className="text-neutral-400 text-sm font-medium">Google Review</span>
-          </div>
-          <div className="text-xs text-neutral-500 font-light">{testimonial.date}</div>
-        </div>
-
-        {/* Quote */}
+export const PrimaryTestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => (
+  <div className="group bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 rounded-3xl p-10 lg:p-12 relative overflow-hidden transition-all duration-500 hover:border-neutral-700">
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    <div className="relative z-10">
+      <div className="flex items-start justify-between mb-8">
+        <div className="flex items-center gap-1">{[...Array(5)].map((_, i) => <StarIcon key={i} />)}</div>
+        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">Verified Customer</span>
+      </div>
+              {/* Quote */}
         <blockquote className="text-xl md:text-2xl text-neutral-200 leading-relaxed mb-8 font-light group-hover:text-white transition-colors duration-300">
-          "{testimonial.quote}"
+          &ldquo;{testimonial.quote}&rdquo;
         </blockquote>
+      <div className="flex items-center gap-4">
+        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-semibold">
+          {testimonial.customerName.split(' ').map(n => n[0]).join('')}
+        </div>
+        <div>
+          <h4 className="text-white font-semibold">{testimonial.customerName}</h4>
+          <p className="text-neutral-400 text-sm">{testimonial.location}</p>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-6 pt-8 mt-8 border-t border-neutral-800">
+         <div className="flex items-center text-sm text-neutral-400"><svg className="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>Google Review</div>
+         <div className="flex items-center text-sm text-neutral-400"><svg className="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>{testimonial.date}</div>
+      </div>
+    </div>
+  </div>
+);
 
-        {/* Customer Info */}
-        <div className="flex items-center space-x-4">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-            <span className="text-white font-semibold text-lg">
-              {testimonial.customerName.split(' ').map(n => n[0]).join('')}
-            </span>
-          </div>
-          <div>
-            <div className="text-white font-semibold group-hover:text-blue-100 transition-colors duration-300">
-              {testimonial.customerName}
-            </div>
-            <div className="text-neutral-400 text-sm font-light">
-              {testimonial.location}
-            </div>
-          </div>
+export const SecondaryTestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => (
+  <div className="group bg-black/50 border border-neutral-800 rounded-2xl p-8 h-full flex flex-col transition-all duration-300 hover:bg-neutral-900/50 hover:border-neutral-700">
+    <div className="flex-grow">
+      <div className="flex items-center gap-1 mb-4">{[...Array(5)].map((_, i) => <StarIcon key={i} />)}</div>
+      <blockquote className="mb-6"><p className="text-neutral-300 leading-relaxed">"{testimonial.quote}"</p></blockquote>
+    </div>
+    <div className="mt-auto pt-6 border-t border-neutral-800">
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
+           {testimonial.customerName.split(' ').map(n => n[0]).join('')}
+        </div>
+        <div>
+          <h5 className="text-white text-sm font-semibold">{testimonial.customerName}</h5>
+          <p className="text-neutral-500 text-xs">{testimonial.location}</p>
         </div>
       </div>
     </div>
-  );
-};
-
-// Secondary Testimonial Card (smaller, supporting)
-interface SecondaryTestimonialCardProps {
-  testimonial: Testimonial;
-  isVisible: boolean;
-  index: number;
-}
-
-export const SecondaryTestimonialCard: React.FC<SecondaryTestimonialCardProps> = ({
-  testimonial,
-  isVisible,
-  index
-}) => {
-  return (
-    <div className={`group relative overflow-hidden rounded-2xl bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 p-6 transition-all duration-1000 hover:bg-neutral-800/70 hover:border-neutral-600 ${
-      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-    }`}
-    style={{ transitionDelay: `${200 + index * 150}ms` }}>
-      
-      {/* Background Effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      
-      <div className="relative z-10">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center space-x-1">
-            {[...Array(5)].map((_, i) => (
-              <StarIcon key={i} className="w-4 h-4" />
-            ))}
-          </div>
-          <div className="text-xs text-neutral-500 font-light">{testimonial.date}</div>
-        </div>
-
-        {/* Quote */}
-        <blockquote className="text-neutral-300 leading-relaxed mb-6 group-hover:text-neutral-200 transition-colors duration-300">
-          "{testimonial.quote}"
-        </blockquote>
-
-        {/* Customer Info */}
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-            <span className="text-white font-semibold text-sm">
-              {testimonial.customerName.split(' ').map(n => n[0]).join('')}
-            </span>
-          </div>
-          <div>
-            <div className="text-white font-medium text-sm group-hover:text-blue-100 transition-colors duration-300">
-              {testimonial.customerName}
-            </div>
-            <div className="text-neutral-400 text-xs font-light">
-              {testimonial.location}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+  </div>
+);

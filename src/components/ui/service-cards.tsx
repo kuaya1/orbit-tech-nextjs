@@ -1,5 +1,6 @@
 // app/components/ui/service-cards.tsx
 import React from 'react';
+import Link from 'next/link';
 
 // Primary Service Card Component
 interface PrimaryServiceCardProps {
@@ -35,9 +36,9 @@ export const PrimaryServiceCard: React.FC<PrimaryServiceCardProps> = ({ title, s
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-4">
-          <a href="#contact" aria-label="Schedule Professional Starlink Installation" className="inline-flex items-center justify-center bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/20">
+          <Link href="#contact" aria-label="Schedule Professional Starlink Installation" className="inline-flex items-center justify-center bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/20">
             Get Free Quote
-          </a>
+          </Link>
           <a href="tel:+15719996915" aria-label="Call for Starlink Installation Quote" className="inline-flex items-center justify-center bg-white/5 border border-white/10 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:bg-white/10">
             Call (571) 999-6915
           </a>
@@ -86,10 +87,10 @@ export const SecondaryServiceCard: React.FC<SecondaryServiceCardProps> = ({ titl
         </ul>
       </div>
       <div className="mt-auto">
-        <a href="#contact" aria-label={`Learn more about ${title}`} className="inline-flex items-center text-blue-400 font-medium text-sm group-hover:text-blue-300 transition-colors duration-300">
+        <Link href="#contact" aria-label={`Learn more about ${title}`} className="inline-flex items-center text-blue-400 font-medium text-sm group-hover:text-blue-300 transition-colors duration-300">
           Learn More
           <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-        </a>
+        </Link>
       </div>
     </div>
   );

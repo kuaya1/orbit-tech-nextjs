@@ -3,7 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Script from 'next/script';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import { Phone, Mail, Shield, Clock, CheckCircle, Award, MapPin, Loader2 } from 'lucide-react';
+import { Phone, Mail, MapPin, Loader2, CheckCircle } from 'lucide-react';
 
 import { FormData, FormErrors } from '@/types/contact';
 import { trustIndicators } from '@/lib/contact-data';
@@ -16,7 +16,10 @@ const ContactForm = () => {
   const [formErrors, setFormErrors] = useState<FormErrors>({});
   const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [isEmailServiceReady, setIsEmailServiceReady] = useState(false);
-  const emailjsRef = useRef<any>(null);
+  const emailjsRef = useRef<{
+    init: (config: { publicKey: string }) => void;
+    send: (serviceId: string, templateId: string, params: Record<string, unknown>) => Promise<{ status: number }>;
+  } | null>(null);
 
   // Mouse tracking for subtle background effect
   const mouseX = useMotionValue(0);
@@ -31,10 +34,13 @@ const ContactForm = () => {
 
   // EmailJS Initialization via next/script's onLoad
   const handleEmailJsLoad = () => {
-    if ((window as any).emailjs) {
-      emailjsRef.current = (window as any).emailjs;
+    if ((window as unknown as Record<string, unknown>).emailjs) {
+      emailjsRef.current = (window as unknown as Record<string, unknown>).emailjs as {
+        init: (config: { publicKey: string }) => void;
+        send: (serviceId: string, templateId: string, params: Record<string, unknown>) => Promise<{ status: number }>;
+      };
       try {
-        emailjsRef.current.init({ publicKey: "cZxddkmZep5G_h86H" });
+        emailjsRef.current?.init({ publicKey: "cZxddkmZep5G_h86H" });
         setIsEmailServiceReady(true);
       } catch (error) {
         console.error('EmailJS initialization failed:', error);
@@ -77,11 +83,15 @@ const ContactForm = () => {
     setFormStatus('loading');
     try {
       const templateParams = { ...formData, time: new Date().toLocaleString(), source: 'Quote Form' };
-      const response = await emailjsRef.current.send("service_a1n7ph9", "template_si8q63h", templateParams);
+      const response = await emailjsRef.current!.send("service_a1n7ph9", "template_si8q63h", templateParams);
 
       if (response.status === 200) {
-        if ((window as any).gtag) {
-          (window as any).gtag('event', 'conversion', {
+        if ((window as unknown as Record<string, unknown>).gtag) {
+          ((window as unknown as Record<string, unknown>).gtag as (
+            command: string,
+            action: string,
+            params: Record<string, unknown>
+          ) => void)('event', 'conversion', {
             'send_to': 'AW-17369280864/afTpCKOIgYkbEODiqNpA',
             'event_category': 'Contact',
             'event_label': 'Contact Form Submission'
@@ -158,7 +168,7 @@ const ContactForm = () => {
             <span className="text-white font-semibold">no-obligation quote.</span>
           </h2>
           <p className="text-lg text-neutral-400 max-w-2xl mx-auto font-light">
-            Professional Starlink installation by experts based here in Reston, Virginia. We'll respond within one business day.
+            Professional Starlink installation by experts based here in Reston, Virginia. We&apos;ll respond within one business day.
           </p>
         </motion.div>
 
@@ -337,7 +347,7 @@ const ContactForm = () => {
                   animate={{ opacity: 1, y: 0 }}
                 >
                   <p className="text-green-400 text-sm font-light">
-                    Thank you! We've received your request and will be in touch soon.
+                    Thank you! We&apos;ve received your request and will be in touch soon.
                   </p>
                 </motion.div>
               )}

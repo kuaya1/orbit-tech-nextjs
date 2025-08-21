@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -6,12 +7,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/">
+            <Link href="/">
               <span className="sr-only">The Orbit Tech</span>
               <div className="text-2xl font-bold text-white">
                 The Orbit Tech
               </div>
-            </a>
+            </Link>
           </div>
           
           <nav className="hidden md:flex space-x-10">
