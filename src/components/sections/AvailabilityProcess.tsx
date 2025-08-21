@@ -4,6 +4,13 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { CheckCircle, XCircle, Loader2, Info, History, Target } from 'lucide-react';
 import { serviceableZips } from '@/lib/serviceableZips';
 
+// Extend the Window interface to include gtag
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 const AvailabilityProcess = () => {
   // Scroll animation state
   const [isVisible, setIsVisible] = useState(false);
