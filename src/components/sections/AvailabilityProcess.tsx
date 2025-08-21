@@ -7,7 +7,7 @@ import { serviceableZips } from '@/lib/serviceableZips';
 // Extend the Window interface to include gtag
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
+    gtag?: (command: string, targetId: string, parameters?: Record<string, unknown>) => void;
   }
 }
 
