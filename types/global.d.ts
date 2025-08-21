@@ -1,10 +1,16 @@
-// types/global.d.ts
+// types/contact.d.ts
 
-declare global {
-  interface Window {
-    gtag: (command: string, action: string, parameters: object) => void;
-  }
+export interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  address: string;
+  serviceType: string;
+  message: string;
 }
 
-// This empty export is needed to make the file a module
-export {};
+export interface FormErrors {
+  name?: string;
+  email?: string;
+  phone?: string;
+}

@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'The Orbit Tech | Professional Starlink Installation DMV',
   description: 'Professional Starlink installation services in McLean, VA and surrounding areas. Expert technicians, same-day service. Call (571) 999-6915',
+  verification: {
+    google: 'lJzXDJr8RSz6F7KrF_-lTU-LLuCSz3zsE4hs2njIUpE',
+  },
 }
 
 export default function RootLayout({

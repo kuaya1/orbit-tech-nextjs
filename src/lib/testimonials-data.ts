@@ -1,3 +1,5 @@
+// app/lib/testimonials-data.ts
+
 import { Testimonial } from '@/types/testimonials';
 
 export const primaryTestimonial: Testimonial = {
@@ -18,7 +20,7 @@ export const secondaryTestimonials: Testimonial[] = [
   },
   {
     id: 'google-review-courtney-g',
-    quote: "Eric went above and beyond to provide a great installation on my (difficult) roof in Annapolis. Exceeded my expectations and was very professional.",
+    quote: "Eric went above and beyond to provide a great installation on my (difficult) roof in Annapolis. Exceeded my expectations and was very professional through the whole process.",
     customerName: "Courtney G",
     location: "Annapolis, MD",
     date: "June 2025"

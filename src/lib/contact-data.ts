@@ -1,3 +1,5 @@
+// app/lib/contact-data.ts
+
 import { Shield, Award, Clock, CheckCircle, LucideIcon } from 'lucide-react';
 
 interface TrustIndicator {
