@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: 'Expert Starlink installation in Northern Virginia. Same-day service available.'
   },
   alternates: {
-    canonical: 'https://orbit-tech-nextjs.vercel.app'
+    canonical: 'https://theorbittech.com'
   },
   verification: {
     google: 'lJzXDJr8RSz6F7KrF_-lTU-LLuCSz3zsE4hs2njIUpE',

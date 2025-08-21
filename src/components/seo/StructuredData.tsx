@@ -7,7 +7,7 @@ export default function StructuredData() {
     "@type": "LocalBusiness",
     "name": "The Orbit Tech",
     "description": "Professional Starlink installation services in McLean, VA and surrounding DMV areas",
-    "url": "https://orbit-tech-nextjs.vercel.app",
+    "url": "https://theorbittech.com",
     "telephone": "(571) 999-6915",
     "email": "info@theorbittech.com",
     "address": {
