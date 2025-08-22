@@ -27,6 +27,8 @@ Disallow: /*/?*
 
 # Main sitemap location (clean, no duplicates)
 Sitemap: https://theorbittech.com/sitemap.xml
+Sitemap: https://theorbittech.com/locations/sitemap.xml
+Sitemap: https://theorbittech.com/portfolio/sitemap.xml
 
 # Allow essential files for proper crawling
 Allow: /robots.txt
