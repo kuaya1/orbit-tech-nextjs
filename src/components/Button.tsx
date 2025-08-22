@@ -10,6 +10,7 @@ export interface ButtonProps {
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export function Button({
@@ -20,6 +21,7 @@ export function Button({
   onClick,
   type = 'button',
   className = '',
+  style = {},
 }: ButtonProps) {
   const getButtonStyles = () => {
     const baseStyles: React.CSSProperties = {
@@ -102,6 +104,7 @@ export function Button({
   const buttonStyles = {
     ...getButtonStyles(),
     ...(isHovered && !disabled ? getHoverStyles() : {}),
+    ...style,
   };
 
   return (
