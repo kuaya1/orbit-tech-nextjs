@@ -37,7 +37,7 @@ export const footerSections: FooterSection[] = [
       { href: '/#faq', label: 'FAQs' },
       { href: '/#testimonials', label: 'Customer Reviews' },
       { 
-        href: 'https://www.google.com/maps/place/The+Orbit+Tech/@38.922118,-77.231073,15z/data=!4m6!3m5!1s0x89b64ad802a8a697:0xb03038d132625853!8m2!3d38.922118!4d-77.231073!16s%2Fg%2F11v551j4wb?hl=en-US&entry=ttu', 
+        href: 'https://maps.app.goo.gl/i3Gk33rmV9pxHBuA9', 
         label: 'Google Business',
         external: true 
       },
