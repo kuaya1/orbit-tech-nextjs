@@ -103,7 +103,7 @@ export default function BlogPage() {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   const featuredPost = blogPosts.find(post => post.featured);
-  const regularPosts = blogPosts.filter(post => !post.featured);
+
 
   return (
     <>
