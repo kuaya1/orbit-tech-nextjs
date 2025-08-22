@@ -207,12 +207,12 @@ const AvailabilityProcess = () => {
           willChange: 'transform',
         }}
       />
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
       <div
         ref={overlayRef}
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%)',
+          background: 'linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 40%)',
           willChange: 'transform',
         }}
       />
@@ -258,7 +258,7 @@ const AvailabilityProcess = () => {
                     maxLength={5}
                     inputMode="numeric"
                     pattern="\d{5}"
-                    className="w-full px-4 py-3 pr-12 rounded-md bg-black/40 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 transition"
+                    className="w-full px-4 py-3 pr-12 rounded-md bg-black/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 transition"
                     aria-label="Enter your ZIP code"
                     required
                   />
@@ -308,7 +308,7 @@ const AvailabilityProcess = () => {
             )}
             
             {showResults && serviceStatus !== 'loading' && serviceStatus !== null && (
-              <div className={`rounded-xl p-6 backdrop-blur-sm border transition-all duration-700 animate-fadeInUp bg-black/40 ${
+              <div className={`rounded-xl p-6 backdrop-blur-sm border transition-all duration-700 animate-fadeInUp bg-black/20 ${
                 serviceStatus ? 'border-green-500/50' : 'border-red-500/50'
               }`}>
                 <div className="flex items-start gap-4">
