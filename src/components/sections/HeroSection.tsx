@@ -41,12 +41,12 @@ const HeroSection = () => {
           {/* Left Column - Content */}
           <div className="text-center lg:text-left space-y-6 sm:space-y-8">
             <motion.h1 variants={fadeInUp} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 leading-tight">Certified Starlink Installers</span>
-              <span className="block text-white leading-tight mt-1 sm:mt-2">Serving Reston & The DMV</span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 leading-tight">Starlink Installation Experts</span>
+              <span className="block text-white leading-tight mt-1 sm:mt-2">Serving Entire DMV Region</span>
             </motion.h1>
 
             <motion.p variants={fadeInUp} className="text-base sm:text-lg lg:text-xl text-neutral-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 px-4 sm:px-0">
-              From professional installation to whole-home Wi-Fi optimization—we ensure every corner of your property gets blazing-fast internet.
+              From professional Starlink installation to mesh Wi-Fi optimization—we deliver 200+ Mbps speeds to every corner of your property. Same-week service. Guaranteed
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start px-4 sm:px-0">
@@ -86,3 +86,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
