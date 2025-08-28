@@ -1,0 +1,43 @@
+# Robots.txt for The Orbit Tech
+# Updated for Google Search Console indexing fixes
+
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Block admin, API, and tracking URLs that cause duplicate indexing issues
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.well-known/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+
+# Prevent indexing of duplicate URL patterns
+Disallow: /*/index.html
+Disallow: /*/index.htm
+Disallow: /*/?*
+
+# Main sitemap location (clean, no duplicates)
+Sitemap: https://theorbittech.com/sitemap.xml
+Sitemap: https://theorbittech.com/locations/sitemap.xml
+Sitemap: https://theorbittech.com/portfolio/sitemap.xml
+
+# Allow essential files for proper crawling
+Allow: /robots.txt
+Allow: /sitemap*.xml
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
