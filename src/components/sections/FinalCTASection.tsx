@@ -59,14 +59,6 @@ const FinalCTASection = () => {
           className="text-center mb-20"
           variants={itemVariants}
         >
-          <motion.div 
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-8"
-            variants={floatVariants}
-          >
-            <Star className="w-4 h-4" />
-            Ready to Transform Your Internet?
-          </motion.div>
-
           <motion.h2 
             className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-[1.1] mb-8"
             variants={itemVariants}
