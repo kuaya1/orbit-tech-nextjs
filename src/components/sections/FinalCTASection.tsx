@@ -71,10 +71,10 @@ const FinalCTASection = () => {
             className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-[1.1] mb-8"
             variants={itemVariants}
           >
-            <span className="text-white">Experience the</span>
+            <span className="text-white">Ready to Transform</span>
             <br />
             <span className="text-white font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-              Orbit Tech Difference
+              Your Connectivity?
             </span>
           </motion.h2>
 

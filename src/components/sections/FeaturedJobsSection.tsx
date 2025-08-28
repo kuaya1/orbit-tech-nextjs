@@ -32,8 +32,7 @@ const FeaturedJobsSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center max-w-3xl mx-auto mb-16" variants={itemVariants}>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
-            Installation Excellence
-            <span className="block text-blue-400 mt-2">in Action</span>
+            Featured Jobs
           </h2>
           <p className="mt-6 text-lg text-neutral-300">
             Real installations, real results. See how we transform connectivity for families and businesses across Virginia, Maryland, and DC.
