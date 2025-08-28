@@ -5,49 +5,52 @@ import { installationJobs } from '@/lib/jobs-data'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://theorbittech.com'
   
-  // Static pages
+  // Add all static pages
   const staticPages = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/portfolio`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
+    '',
+    '/about',
+    '/services',
+    '/contact',
+    '/portfolio',
+    '/blog',
+    '/faq',
+    '/services/starlink-installation',
+    '/services/mesh-wifi-setup',
+    '/services/business-solutions',
+    '/resources',
+    '/resources/installation-guide',
+    '/resources/faq',
+    '/resources/blog',
+    '/service-areas',
+    '/service-areas/maryland',
+    '/service-areas/northern-virginia',
+    '/service-areas/washington-dc',
+    '/test-google'
   ]
 
-  // Dynamic location pages
-  const locationPages = sampleLocations.map(location => ({
-    url: `${baseUrl}/locations/${location.slug}`,
+  // Add all location pages
+  const locations = [
+    '/locations/loudoun-county-va',
+    '/locations/fairfax-county-va',
+    '/locations/montgomery-county-md',
+    '/locations/arlington-county-va',
+    '/locations/prince-georges-county-md',
+    '/locations/fauquier-county-va',
+    '/locations/prince-william-county-va'
+  ]
+
+  // Combine all URLs
+  const allPages = [...staticPages, ...locations]
+
+  // Convert to sitemap format
+  const sitemapEntries = allPages.map(page => ({
+    url: `${baseUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
+    changeFrequency: 'weekly' as const,
+    priority: page === '' ? 1 : 0.8,
   }))
 
-  // Dynamic portfolio/job pages
+  // Add dynamic portfolio/job pages
   const portfolioPages = installationJobs.map(job => ({
     url: `${baseUrl}/portfolio/${job.id}`,
     lastModified: new Date(),
@@ -55,5 +58,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...staticPages, ...locationPages, ...portfolioPages]
+  return [...sitemapEntries, ...portfolioPages]
 }

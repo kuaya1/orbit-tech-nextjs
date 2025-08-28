@@ -1,0 +1,32 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?!theorbittech\\.com$).*"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.theorbittech.com"
+        }
+      ],
+      "destination": "https://theorbittech.com/$1",
+      "permanent": true
+    }
+  ]
+}
