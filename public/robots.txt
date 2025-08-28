@@ -2,8 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://theorbittech.com/sitemap.xml
-
-# Block Vercel preview domains
-User-agent: *
-Disallow: /
-Host: theorbittech.com
