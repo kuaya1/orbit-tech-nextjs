@@ -5,6 +5,7 @@ import Navbar from '@/components/layout/navbar'
 import Footer from '@/components/layout/footer-new'
 import StructuredData from '@/components/seo/StructuredData'
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <GoogleAnalytics />
+        <SpeedInsights />
         <StructuredData />
         <Navbar />
         {children}
