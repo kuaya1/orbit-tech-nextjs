@@ -10,19 +10,21 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Orbit Tech Starlink - Professional Starlink Installation in Northern Virginia',
-  description: 'Expert Starlink satellite internet installation and optimization services in Reston, Herndon, Ashburn and throughout Northern Virginia. Licensed technicians, same-day service, competitive pricing.',
+  title: 'Professional Starlink Installation DMV | Certified Installers | Same-Day Service',
+  description: 'Expert Starlink installation in DC, Maryland & Virginia. ✓ Licensed technicians ✓ Same-day service ✓ 90-day warranty. Get 200+ Mbps speeds. Call (571) 999-6915 for free quote.',
   keywords: [
-    'Starlink installation',
-    'Starlink installer',
-    'satellite internet',
-    'Northern Virginia',
-    'Reston',
-    'Herndon', 
-    'Ashburn',
-    'internet installation',
-    'professional installation',
-    'licensed technician'
+    'professional Starlink installation Northern Virginia',
+    'certified Starlink installer Maryland suburbs', 
+    'custom Starlink mount Fairfax VA',
+    'Starlink business setup DC',
+    'best Starlink installers DMV',
+    'Starlink roof mount rural Virginia',
+    'emergency Starlink installation McLean',
+    'Starlink obstruction solutions DMV',
+    'who installs Starlink near Reston VA',
+    'same-day Starlink installation',
+    'licensed Starlink technician',
+    'Starlink site survey Maryland suburbs'
   ],
   openGraph: {
     title: 'Orbit Tech Starlink - Professional Installation Services',

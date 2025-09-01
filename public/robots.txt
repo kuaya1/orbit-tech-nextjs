@@ -1,4 +1,25 @@
 User-agent: *
 Allow: /
 
+# AI Search Engine Optimization
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemap location
 Sitemap: https://theorbittech.com/sitemap.xml
+Sitemap: https://theorbittech.com/sitemap-index.xml
+Sitemap: https://theorbittech.com/sitemap-pages.xml
+Sitemap: https://theorbittech.com/sitemap-services.xml
+Sitemap: https://theorbittech.com/sitemap-locations.xml
+
+# Voice Search Optimization
+# Allow all content for voice assistant indexing
