@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     canonical: 'https://theorbittech.com'
   },
   verification: {
-    google: 'lJzXDJr8RSz6F7KrF_-lTU-LLuCSz3zsE4hs2njIUpE',
+    google: 'AsOlwWN6LS3-odNZ0e0daEsjs-1c9pDE6F9LT8gkbdU',
   },
 }
 
