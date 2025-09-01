@@ -1,4 +1,4 @@
-// Server-side component for structured data
+// Server-side component for structured data - Updated for deployment
 import Script from 'next/script'
 
 export default function StructuredData() {
