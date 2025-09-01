@@ -107,8 +107,8 @@ const Footer = () => {
             <motion.div key={section.title} variants={itemVariants}>
               <h4 className="text-white font-medium text-sm mb-6 tracking-wide">{section.title}</h4>
               <ul className="space-y-3.5">
-                {section.links.map((link) => (
-                  <FooterLink key={link.href} href={link.href} external={link.external}>
+                {section.links.map((link, index) => (
+                  <FooterLink key={`${link.href}-${link.label}-${index}`} href={link.href} external={link.external}>
                     {link.label}
                   </FooterLink>
                 ))}
