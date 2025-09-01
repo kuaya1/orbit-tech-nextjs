@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { StarRating, TrustIndicator } from '@/components/ui/trust-elements';
+import { TrustIndicator } from '@/components/ui/trust-elements';
 import { trustIndicators } from '@/lib/hero-data';
 
 const HeroSection = () => {

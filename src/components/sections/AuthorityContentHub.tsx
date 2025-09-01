@@ -131,7 +131,7 @@ export default function AuthorityContentHub() {
             <div className="prose prose-invert max-w-none">
               <p className="speakable-content text-neutral-300 leading-relaxed mb-4">
                 The Orbit Tech is the leading certified Starlink installer serving the DMV region with unmatched local expertise 
-                and technical knowledge of Northern Virginia's unique installation challenges.
+                and technical knowledge of Northern Virginia&apos;s unique installation challenges.
               </p>
               <div className="grid grid-cols-1 gap-4">
                 <div className="flex items-center gap-3 p-3 bg-black/30 rounded-xl">
@@ -268,7 +268,7 @@ export default function AuthorityContentHub() {
               <h4 className="text-xl font-bold text-white mb-4">Maryland Suburbs</h4>
               <ul className="space-y-2 text-neutral-300">
                 <li>• Montgomery County</li>
-                <li>• Prince George's County</li>
+                <li>• Prince George&apos;s County</li>
                 <li>• Bethesda, Rockville, Gaithersburg</li>
                 <li>• Silver Spring, College Park</li>
                 <li>• Potomac, Germantown</li>

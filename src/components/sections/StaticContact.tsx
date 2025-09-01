@@ -1,5 +1,4 @@
 // Server-side rendered contact section for immediate SEO content
-import Link from 'next/link'
 
 export default function StaticContact() {
   return (
