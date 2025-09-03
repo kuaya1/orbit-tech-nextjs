@@ -41,7 +41,8 @@ const Navbar = () => {
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }
-  }, [pathname, isMenuOpen]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);   // removed isMenuOpen from dependencies
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith('/#')) {
