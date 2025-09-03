@@ -34,6 +34,30 @@ export default function StructuredData() {
           "longitude": -77.3570
         },
         "geoRadius": "80467"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Fairfax County, Virginia"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Loudoun County, Virginia"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Arlington County, Virginia"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Montgomery County, Maryland"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Prince William County, Virginia"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Prince George's County, Maryland"
       }
     ],
     "serviceType": ["Starlink Installation", "Satellite Internet Setup", "Wi-Fi Optimization"],
@@ -44,7 +68,24 @@ export default function StructuredData() {
     "foundingDate": "2024",
     "sameAs": [
       "https://maps.app.goo.gl/i3Gk33rmV9pxHBuA9"
-    ]
+    ],
+    "availableAtOrFrom": {
+      "@type": "Place",
+      "name": "The Orbit Tech Service Center",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1760 Reston Pkwy",
+        "addressLocality": "Reston",
+        "addressRegion": "VA",
+        "postalCode": "20190",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.9586,
+        "longitude": -77.3570
+      }
+    }
   }
 
   const serviceSchema = {
@@ -65,6 +106,23 @@ export default function StructuredData() {
         "longitude": -77.3570
       },
       "geoRadius": "80467"
+    },
+    "availableAtOrFrom": {
+      "@type": "Place",
+      "name": "The Orbit Tech Service Center",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1760 Reston Pkwy",
+        "addressLocality": "Reston",
+        "addressRegion": "VA",
+        "postalCode": "20190",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.9586,
+        "longitude": -77.3570
+      }
     },
     "serviceType": "Technology Installation",
     "category": "Internet Service Provider",

@@ -24,6 +24,11 @@ export const footerSections: FooterSection[] = [
   {
     title: 'Locations',
     links: [
+      { href: '/starlink-installation-near-me', label: 'Near Me' },
+      { href: '/starlink-installation-reston-va', label: 'Reston, VA' },
+      { href: '/starlink-installation-mclean-va', label: 'McLean, VA' },
+      { href: '/starlink-installation-ashburn-va', label: 'Ashburn, VA' },
+      { href: '/starlink-installation-bethesda-md', label: 'Bethesda, MD' },
       { href: '/locations/loudoun-county-va', label: 'Loudoun County' },
       { href: '/locations/fairfax-county-va', label: 'Fairfax County' },
       { href: '/locations/arlington-county-va', label: 'Arlington County' },
