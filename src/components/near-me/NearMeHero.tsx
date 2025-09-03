@@ -14,7 +14,7 @@ interface LocationData {
 const NearMeHero = () => {
   const [userLocation, setUserLocation] = useState<LocationData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const { isMobile, isLoading: mobileLoading } = useMobileDetection();
+  const { isMobile } = useMobileDetection();
 
   useEffect(() => {
     // Try to detect user location

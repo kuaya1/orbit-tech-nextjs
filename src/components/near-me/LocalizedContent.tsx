@@ -54,7 +54,7 @@ const LocalizedContent = () => {
               Your <span className="font-semibold text-blue-400">Local</span> Starlink Experts
             </h2>
             <p className="text-xl text-neutral-400 max-w-3xl mx-auto">
-              Based in the heart of Northern Virginia, we're your neighborhood Starlink installation specialists 
+              Based in the heart of Northern Virginia, we&apos;re your neighborhood Starlink installation specialists 
               with deep local knowledge and rapid response capabilities.
             </p>
           </div>
@@ -142,7 +142,7 @@ const LocalizedContent = () => {
             </h3>
             <p className="text-lg text-neutral-300 max-w-3xl mx-auto">
               The closer you are to our Reston location, the faster we can respond. 
-              Here's what you can expect based on your distance from us:
+              Here&apos;s what you can expect based on your distance from us:
             </p>
           </div>
 
